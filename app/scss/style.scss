@@ -1,0 +1,110 @@
+@import 'global';
+@import 'vars';
+@import 'fonts';
+
+/* start header */
+
+.header__inner {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include f700;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 90px;
+    li {
+        display: inline-block;
+        & + li {
+            margin-left: 28px;
+        }
+    }
+    & > li:last-child {
+        padding-right: 6px;
+        border-right: 1px solid #000;
+    }
+    a:hover {
+        color: $poppy;
+    }
+    
+}
+
+.menu__list::before {
+    content: "\f002";
+    position: absolute;
+    font-family: 'Linearicons-Free';
+    right: 60px;
+}
+
+.menu__list::after {
+    content: "\f07a";
+    position: absolute;
+    font-family: 'Linearicons-Free';
+    right: 25px;
+}
+
+.header__menu {
+    position: relative;
+    span.cart-number {
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+}
+
+/* end header */
+
+/* start slider__home */
+
+
+.slider__home-item {
+    min-height: 850px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;                             /* добавить overlay */
+}
+
+.home__wrapper {
+    max-width: 1180px;
+    width: 100%;
+    bottom: 120px;
+    position: absolute;
+}
+
+.home__box {
+    right: 0;
+    bottom: 0px;
+    position: absolute;
+    padding-right: 30px;
+}
+
+.home__arrows{
+    display: flex;
+    align-items: center;
+    .prev {
+        margin-right: 15px;
+    }
+}
+
+.home__box-title {
+    font-weight: 700;
+    font-family: 'axis', sans-serif;
+    font-size: 50px;
+    color: #fff;
+}
+
+.home__box-descr {
+    color: $poppy;
+    font-size: 30px;
+    @include f700;
+}
+
+
+/* end slider__home */

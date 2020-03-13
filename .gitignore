@@ -1,0 +1,9 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+.vs
+*Thumbs.db
+
+node_modules/
+app/css/libs.min.css
+package-lock.json
