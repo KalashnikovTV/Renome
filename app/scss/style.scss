@@ -4,6 +4,17 @@
 
 /* start header */
 
+.header {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: auto;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
 .header__inner {
     height: 100px;
     display: flex;
@@ -26,7 +37,7 @@
         }
     }
     & > li:last-child {
-        padding-right: 6px;
+        padding-right: 20px;
         border-right: 1px solid #000;
     }
     a:hover {
@@ -55,6 +66,7 @@
         position: absolute;
         right: 10px;
         top: 0;
+        @include f700;
     }
 }
 
@@ -123,19 +135,26 @@
 
 /* end slider__home */
 
-/* start about  */
+/* start about, menu, contact  */
 
-.about {
+.about,
+.menu,
+.contact,
+.reservation {
     padding: 100px 0 135px;
 }
 
-.about__inner {
+.about__inner,
+.menu__inner,
+.contact__inner,
+.reservation__inner {
     padding-left: 160px;
     display: flex;
     justify-content: space-between;
 }
 
-.about__pictures {
+.about__pictures,
+.reservation__pictures {
     position: relative;
     img {
         display: block;
@@ -145,17 +164,37 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .about__photo2 {
+    .about__photo2,
+    .reservation__photo2 {
         position: absolute;
         right: 60px;
         top: 235px;
     }
 }
 
-.about__box {
-    padding-left: 100px;
-    padding-top: 40px;
-    padding-right: 140px;
+.reservation__pictures {
+    /* order: 1; */
+    img {
+        width: 345px;
+        height: 230px;
+    }
+    .reservation__photo2 {
+        left: 55px;
+        top: 155px;
+        z-index: -1;
+    }
+}
+/* .reservation__box {
+    order: 2;
+} */
+
+.about__box,
+.menu__box,
+.contact__box,
+.reservation__box {
+    padding-left: 90px;
+    padding-top: 35px;
+    padding-right: 90px;
     &-title {
         @include axis;
         color: $title;
@@ -171,34 +210,230 @@
         margin-top: 10px;        
     }
     &-content {
-        line-height: 24px;
+        line-height: 30px;
         color: $text;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+        letter-spacing: .15em;
     }
     &-text {
-        line-height: 24px;
+        line-height: 30px;
         color: $text;
+        letter-spacing: .15em;
         margin-bottom: 30px;
     }
     &-btn {
+        transition: all .2s linear;
         display: inline-flex;
         cursor: pointer;
-        .about__box-dots {
+        .about__box-dots,
+        .menu__box-dots,
+        .contact__box-dots,
+        .reservation__box-dots {
             background-color: $title;
-            height: 5px;
-            width: 5px;
+            height: 8px;
+            width: 8px;
             border-radius: 50%;
         }
-        .about__box-dots:not(:last-child) {
-            margin-right: 6px;
+        .about__box-dots,
+        .menu__box-dots,
+        .contact__box-dots,
+        .reservation__box-dots:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+    &-btn:hover {
+        .about__box-dots,
+        .menu__box-dots,
+        .contact__box-dots,
+        .reservation__box-dots {
+            background-color: $poppy;
+            transition: all .2s;
         }
     }
 }
 
-/* end about */
+.reservation__box {
+    padding-right: 130px;
+    padding-left: 150px;
+}
+
+/* end about, menu, contact */
 
 /* start lunch */
 
 
 
 /* end lunch */
+
+
+/* start menu, contact */
+
+.menu__pictures,
+.contact__pictures {
+    order: 2;
+}
+
+.menu__box,
+.contact__box {
+    order: 1;
+    text-align: right;
+    padding-left: 60px;
+    padding-right: 200px;
+}
+
+.menu__pictures,
+.contact__pictures {
+    position: relative;
+    img {
+        display: block;
+        width: 375px;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .menu__photo2,
+    .contact__photo2 {
+        position: absolute;
+        right: 120px;
+        z-index: -1;
+        top: 155px;
+    }
+}
+
+.contact__pictures {
+    img {
+        width: 390px;
+        height: 260px;
+    }
+}
+
+/* end menu, contact */
+
+
+/* start testimonial */
+
+.testimonial {
+    padding-top: 100px;
+    &__content {
+        padding: 100px 0;
+        background-color: #f7f7f7;
+    }
+}
+
+.testimonial__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial__img-wrapper {
+    margin-top: -200px;
+    text-align: center;
+    img {
+        width: 350px;
+        height: 450px;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.testimonial__quote {
+    text-align: center;
+    max-width: 415px;
+    /* margin: 60px auto 0; */
+    margin: 0 auto;
+    &-content {
+        font-size: 25px;
+        line-height: 38px;
+        letter-spacing: 4px;
+        color: $title;
+    }
+    &-name {
+        @include axis;
+        color: $title;
+        text-transform: uppercase;
+        margin-top: 25px;
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+}
+
+/* end testimonial */
+
+/* start services  */
+
+.services__inner {
+    text-align: center;
+    margin-bottom: 60px;
+    &-title {
+        @include axis;
+        color: $title;
+        font-size: 50px;
+        letter-spacing: 10px;
+    }
+    &-descr {
+        text-transform: uppercase;
+        line-height: 25px;
+        @include f700;
+        color: $poppy;
+        margin-top: 5px;
+    }
+}
+
+.services__list-wrapper {
+    background-color: #f7f7f7;
+}
+
+.services__list {
+    display: flex;
+    justify-content: center;
+}
+
+.services__item {
+    flex: 0 1 350px;
+    padding: 125px 12px;
+    font-size: 20px;
+    color: $title;
+    letter-spacing: 3px;
+    text-align: center;
+    a:hover {
+        color: $poppy;
+        @include f700;
+        transition: all .2s;
+    }
+}
+.services__item:not(:first-child) {
+    border-left: 1px solid #d9d9d9;
+}
+
+
+.cat-now {
+    padding: 75px 0;
+    background-color: $text;
+    background-image: url(../images/content/cat-now.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__inner {
+        text-align: center;
+    }
+    &__btn {
+        padding: 20px 35px;
+        background-color: $title;
+        color: #fff;
+        font-size: 11px;
+        @include f700;
+        text-transform: uppercase;
+        width: 170px;
+        letter-spacing: 2px;
+        transition: all .2s;
+    }
+    &__btn:hover {
+        background-color: $poppy;
+    }
+}
+
+/* end services */
