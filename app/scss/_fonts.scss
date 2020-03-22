@@ -3,6 +3,15 @@
     src: url('../fonts/axis.otf') format('otf')
 }
 
+@font-face {
+  font-family: 'Streetwear';
+  font-weight: 400;
+  font-display: swap;
+  src: local('Streetwear'),
+       url('../fonts/Streetwear.woff2') format('woff2'),
+       url('../fonts/Streetwear.woff') format('woff');
+}
+
 
 @font-face {
     font-family: 'Linearicons-Free';
