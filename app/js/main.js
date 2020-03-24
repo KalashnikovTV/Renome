@@ -3,7 +3,10 @@ $(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow: $('.prev'),
-        nextArrow: $('.next')
+        nextArrow: $('.next'),
+        autoplay: true,
+        autoplaySpeed: 4000,
+        infinite: true
     });
 
     $(".my-flipster").flipster({
@@ -18,3 +21,5 @@ $(function(){
 
     
 });
+
+
