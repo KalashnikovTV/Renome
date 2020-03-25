@@ -19,6 +19,9 @@ $(function(){
         click: false
     });
 
+
+    $('select').styler();
+
     
 });
 
