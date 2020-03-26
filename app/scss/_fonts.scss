@@ -12,6 +12,17 @@
        url('../fonts/Streetwear.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'jaapokki-regular';
+  font-weight: 400;
+  font-display: swap;
+  src: local('jaapokki-regular'),
+       url('../fonts/jaapokki-regular.ttf') format('ttf'),
+       url('../fonts/jaapokki-regular.woff') format('woff'),
+       url('../fonts/jaapokki-regular.eot') format('eot'),
+       url('../fonts/jaapokki-regular.svg') format('svg');
+}
+
 
 @font-face {
     font-family: 'Linearicons-Free';

@@ -30,7 +30,9 @@ $(function(){
             $(this).addClass('active');
             $('#'+id).addClass('active-tab').fadeIn();
             return false;
-        });
+    });
+
+    
 });
 
 
