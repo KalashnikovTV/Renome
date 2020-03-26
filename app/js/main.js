@@ -23,6 +23,14 @@ $(function(){
     $('select').styler();
 
     
+    $('.discoverer__wrapper .tab').on('click', function(event) {
+        var id = $(this).attr('data-id');
+            $('.discoverer__wrapper').find('.tab-item').removeClass('active-tab').hide();
+            $('.discoverer__wrapper .tabs').find('.tab').removeClass('active');
+            $(this).addClass('active');
+            $('#'+id).addClass('active-tab').fadeIn();
+            return false;
+        });
 });
 
 

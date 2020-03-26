@@ -1471,3 +1471,23 @@ ul.flipster__container {
 }
 
 /* end reservation.html */
+
+
+/* start discoverer.html */
+
+.contact__pictures {
+    .discoverer__photo1 {
+        width: 375px;
+        height: 240px;
+    }
+    .discoverer__photo2 {
+        width: 362px;
+        height: 260px;
+        right: 120px;
+        top: 155px;
+        z-index: -1;
+    }
+}
+
+
+/* end discoverer.html */
