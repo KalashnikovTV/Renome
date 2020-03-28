@@ -348,7 +348,7 @@ ul.flipster__container {
 
 .flipster--coverflow .flipster__container {
     padding-bottom: 0;
-    padding-left: 30px;
+    padding-left: 31px;
 }
 
 .flipster--coverflow .flipster__item--future .flipster__item__content {
@@ -400,12 +400,12 @@ ul.flipster__container {
 
 .flipster__item.flipster__item--past.flipster__item--past-2 {
     transform: scale(.8) rotateY(0deg);
-    opacity: 0.6;
+    opacity: -1.6;
 }
 
 .flipster__item.flipster__item--past.flipster__item--past-3 {
     transform: scale(.7) rotateY(0deg);
-    opacity: 0.5;
+    opacity: -1.5;
 }
 
 .flipster--coverflow .flipster__item__content {
@@ -1648,6 +1648,93 @@ ul.flipster__container {
     }
 }
 
-
-
 /* end discoverer.html */
+
+/* start one-page.html */
+
+.testimonial__one-page {
+    .testimonial__img-wrapper {
+        order: 2;
+    }
+    .testimonial__inner {
+        max-width: 1000px;
+    }
+}
+
+.happy__one-page {
+    padding: 0 0 100px 0;
+}
+
+/* start gallery */
+
+.gallery {
+    padding: 100px 0;
+    background-color: #f7f7f7;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 820px;
+        margin: 0 auto;
+    }
+}
+
+.gallery__box {
+    text-align: left;
+    &-title {
+        @include axis;
+        font-size: 50px;
+        color: $title;
+        letter-spacing: 10px;
+    }
+    &-descr {
+        color: $poppy;
+        @include f700;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+}
+
+.gallery__thumb {
+    padding: 7.5px;
+}
+
+.gallery__wrapper {
+    max-width: 495px;
+    display: flex;
+    flex-wrap: wrap;
+    .gallery__thumb-inner > img {
+        width: 150px;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-size: inherit;
+        background-position: center;
+        display: block;
+    }
+    .gallery__thumb-inner{
+        position: relative;
+        .gallery__thumb-link {
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            background: rgba(30,38,51,.2);
+            opacity: 0;
+            transition: opacity .25s ease;
+        }
+        .gallery__thumb-link:focus,
+        .gallery__thumb-link:hover {
+            opacity: 1;
+        }
+    }
+}
+
+/* end gallery */
+
+/* end one-page.html */
