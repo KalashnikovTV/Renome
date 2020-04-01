@@ -1738,3 +1738,39 @@ ul.flipster__container {
 /* end gallery */
 
 /* end one-page.html */
+
+/* start 404.html */
+
+.header__box-content {
+    text-align: center;
+}
+
+.content__box {
+    @include f700;
+    &-title {
+        font-size: 300px;
+        @include axis;
+        color: #fff;
+
+    }
+    &-descr {
+        font-size: 30px;
+        color: $poppy;
+    }
+    &-btn {
+        font-size: 11px;
+        background-color: $title;
+        padding: 20px 25px;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 2px;
+        width: 180px;
+        margin-top: 100px;
+        transition: all .3s;
+        &:hover {
+            background-color: $poppy;
+        }
+    }
+}
+
+/* end 404.html */
