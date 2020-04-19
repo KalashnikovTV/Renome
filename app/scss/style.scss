@@ -29,7 +29,7 @@
     @include f700;
     text-transform: uppercase;
     position: relative;
-    padding-right: 90px;
+    padding-right: 60px;
     li {
         display: inline-block;
         & + li {
@@ -43,21 +43,6 @@
     a:hover {
         color: $poppy;
     }
-    
-}
-
-.menu__list::before {
-    content: "\f002";
-    position: absolute;
-    font-family: 'Linearicons-Free';
-    right: 60px;
-}
-
-.menu__list::after {
-    content: "\f07a";
-    position: absolute;
-    font-family: 'Linearicons-Free';
-    right: 25px;
 }
 
 .header__menu {
@@ -67,6 +52,18 @@
         right: 10px;
         top: 0;
         @include f700;
+        cursor: pointer;
+        padding-left: 10px;
+    }
+    .cart-number:hover {
+        color: $poppy;
+    }
+    .cart-number::before {
+        content: "\f07a";
+        position: absolute;
+        font-family: 'Linearicons-Free';
+        right: 17px;
+        font-size: 12px;
     }
 }
 
