@@ -45,12 +45,16 @@
     }
 }
 
-.header__menu {
+.cart-number__box {
     position: relative;
+}
+
+.header__menu {
+    /* position: relative; */
     span.cart-number {
         position: absolute;
         right: 10px;
-        top: 0;
+        top: -15px;
         @include f700;
         cursor: pointer;
         padding-left: 10px;
@@ -64,6 +68,23 @@
         font-family: 'Linearicons-Free';
         right: 17px;
         font-size: 12px;
+    }
+}
+
+.header__menu-btn {
+    width: 30px;
+    display: none;
+}
+
+.header__menu-row {
+    width: 100%;
+    background-color: #fff;
+    height: 5px;
+    & {
+        margin-top: 5px;
+    }
+    &__black {
+        background-color: #000;
     }
 }
 
@@ -1771,3 +1792,6 @@ ul.flipster__container {
 }
 
 /* end 404.html */
+
+
+@import 'media';

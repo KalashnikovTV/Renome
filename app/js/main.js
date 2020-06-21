@@ -32,7 +32,11 @@ $(function(){
             return false;
     });
 
-    
+    $('.header__menu-btn').on('click', function(){
+        $('.menu__nav > ul').slideToggle();
+    });
+
+
 });
 
 

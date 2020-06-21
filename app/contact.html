@@ -22,6 +22,11 @@
                 </div>
                 <div class="header__menu">
                     <nav class="menu__nav">
+                        <div class="header__menu-btn">
+                            <div class="header__menu-row"></div>
+                            <div class="header__menu-row"></div>
+                            <div class="header__menu-row"></div>
+                        </div>
                         <ul class="menu__list menu__list-white">
                             <li>
                                 <a href="#">
@@ -60,7 +65,9 @@
                             </li>
                         </ul>
                     </nav>
-                    <span class="cart-number cart-number_white">2</span>
+                    <div class="cart-number__box">
+                        <span class="cart-number cart-number_white">2</span>
+                    </div>
                 </div>
             </div>
             <div class="header__content">
@@ -113,13 +120,13 @@
                             <input class="form__input" placeholder="Last Name *" required>
                         </div>
                         <div class="form__field">
-                            <input class="form__input" placeholder="Email *" required>
+                            <input class="form__input" type="email" placeholder="Email *" required>
                         </div>
                         <div class="form__field">
                             <input class="form__input" placeholder="Subject *" required>
                         </div>
                         <div class="form__field form__field_wide">
-                            <textarea class="text-area" placeholder="Message *" required></textarea>
+                            <textarea class="text-area" minlength="10" placeholder="Message *" required></textarea>
                         </div>
                     </div>
                     <div class="happy-form__submit">
@@ -155,7 +162,7 @@
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__logo">
-                    <a href="#">
+                    <a href="#" class="footer__logo-404">
                         <img src="images/logo.png" alt="">
                     </a>
                 </div>
