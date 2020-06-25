@@ -25,6 +25,15 @@
     .location-map {
         margin-top: 60px;
     }
+    .happy {
+        padding: 50px 0;
+    }
+    .about__inner {
+        padding-left: 0;
+    }
+    .reservations__box {
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 845px) {
@@ -80,7 +89,36 @@
     .header__menu span.cart-number__black {
         color: #000;
     }
-   
+    .about__inner {
+        display: block;
+    }
+    .reservation__photo1,
+    .reservation__photo2 {
+        margin: 0 auto;
+    }
+    .about__pictures .reservation__photo2 {
+        left: 130px;
+    }
+    .reservations__box {
+        padding: 210px 20px 0;
+    }
+    .online__inner-fields {
+        display: block;
+    }
+    .online__inner-fields .online__input-group:not(:first-child) {
+        margin-left: 0;
+        margin: 0 auto;
+    }
+    .online__input-group {
+        margin: 0 auto;
+    }
+    .online__inner-fields .online__input-group:not(:first-child) {
+        padding-right: 25px;
+    }
+    .online__inner-fields .online__input-group {
+        width: 50%;
+        padding-right: 6px;
+    }
 }
 
 @media (max-width: 761px) {
@@ -125,14 +163,30 @@
     .happy__form {
         order: 2;
     }
-    .happy {
-        padding: 50px 0;
-    }
+    
     .happy-form__submit {
         text-align: center;
     }
     .form__fields {
         margin: 0 -15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about__pictures .reservation__photo1,
+    .about__pictures .reservation__photo2 {
+        width: 250px;
+        height: 165px;
+    }
+    .about__pictures .reservation__photo2 {
+        top: 105px;
+        left: 70px;
+    }
+    .reservations__box {
+        padding: 150px 20px 0;
+    }
+    .online-res {
+        padding-bottom: 50px;
     }
 }
 
@@ -189,8 +243,25 @@
     .location-map iframe {
         height: 260px;
     }
+    .about__pictures .reservation__photo2 {
+        right: 0;
+    }
+    .reservations__box {
+        padding: 150px 0 0;
+    }
+    .online__inner-fields .online__input-group {
+        width: 100%;
+    }
 }
 
+@media (max-width: 374px) {
+    .about__pictures .reservation__photo2 {
+        left: 30px;
+    }
+    .content-page__title {
+        letter-spacing: 9px;
+    }
+}
 
 
 
