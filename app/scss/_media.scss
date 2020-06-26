@@ -1,3 +1,9 @@
+@media (max-width: 1230px) {
+    .contact__inner {
+        padding-left: 0;
+    }
+}
+
 @media (max-width: 1080px) {
     .contact__inner {
         display: block;
@@ -170,6 +176,9 @@
     .form__fields {
         margin: 0 -15px;
     }
+    .menu-product__text {
+        padding-right: 60px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -187,6 +196,48 @@
     }
     .online-res {
         padding-bottom: 50px;
+    }
+    .discoverers .discoverer__photo1 {
+        width: 240px;
+        height: 165px;
+        margin: 0 auto;
+    }
+    .discoverers .discoverer__photo2 {
+        width: 240px;
+        height: 165px;
+        left: 0;
+        top: 100px;
+    }
+    .discoverers .contact__pictures {
+        height: 250px;
+    }
+    .tabs .tab+.tab {
+        margin-left: 30px;
+    }
+    .menu-product__price {
+        margin-left: 0px;
+        position: absolute;
+        padding-top: 0;
+        margin-top: 90px;
+    }
+    .menu-product__thumb-img,
+    .menu-product__thumb-link {
+        width: 70px;
+        height: 70px;
+    }
+    .menu-product__text {
+        padding-right: 0;
+        padding-left: 25px;
+        padding-top: 0;
+    }
+    .discoverer-item__list-title {
+        padding-left: 90px;
+    }
+    .discoverer-item__list {
+        padding-top: 70px;
+    }
+    .menu-product__price {
+        font-size: 21px;
     }
 }
 
@@ -252,6 +303,18 @@
     .online__inner-fields .online__input-group {
         width: 100%;
     }
+    .discoverers .contact__box-title {
+        font-size: 38px;
+    }
+    .discoverers .contact__box {
+        padding-top: 50px;
+    }
+    .discoverer {
+        padding-top: 30px;
+    }
+    .tabs .tab+.tab {
+        margin-left: 20px;
+    }
 }
 
 @media (max-width: 374px) {
@@ -260,6 +323,12 @@
     }
     .content-page__title {
         letter-spacing: 9px;
+    }
+    .tabs .tab+.tab {
+        margin-left: 15px;
+    }
+    .tabs .tab {
+        font-size: 10px;
     }
 }
 
