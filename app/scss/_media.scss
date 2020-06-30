@@ -11,6 +11,12 @@
     .moreabout__opening {
         margin: 50px auto 0;
     }
+    .reservation__home {
+        .reservation__box {
+            padding-right: 0;
+            padding-left: 130px;
+        }
+    }
 }
 
 @media (max-width: 1080px) {
@@ -75,6 +81,100 @@
     }
     .online-res .about__box {
         margin-top: 200px;
+    }
+    .about__home {
+        .about__box {
+            padding-bottom: 30px;
+        }
+    }
+    .menu__home {
+        .menu__pictures {
+            .menu__photo1,
+            .menu__photo2 {
+                margin: 0 auto;
+            }
+        }
+        .menu__inner {
+            padding-left: 0;
+            display: block;
+        }
+        .menu__box {
+            text-align: center;
+            padding: 0;
+            margin-top: 200px;
+        }
+    }
+    .reservation__home {
+        .reservation__inner {
+            display: block;
+            padding-left: 0;
+        }
+        .reservation__pictures {
+            .reservation__photo1,
+            .reservation__photo2 {
+                margin: 0 auto;
+            }
+            .reservation__photo2 {
+                left: 0;
+                right: -150px;
+            }
+        }
+        .reservation__box {
+            padding: 0;
+            text-align: center;
+            margin-top: 200px;
+        }
+    }
+    .blog__home {
+        padding-bottom: 60px;
+        .blog__list {
+            display: block;
+        }
+        .blog__list .blog__posts-post {
+            margin: 50px auto;
+            width: 400px;
+            height: 350px;
+        }
+        .blog__list-item {
+            padding: 0;
+        }
+        .blog__list .blog__posts-post__inner:hover {
+            transform: scale(1.03);
+        }
+    }
+    .contact__home {
+        .contact__pictures {
+            .contact__photo1,
+            .contact__photo2 {
+                margin: 0 auto;
+            }
+        }
+        .contact__box {
+            margin-top: 20px;
+            padding-bottom: 70px;
+        }
+    }
+    .lunch__home,
+    .lunch {
+        display: none;
+    }
+    .contact__one-page {
+        .contact__pictures {
+            .contact__photo1,
+            .contact__photo2 {
+                margin: 0 auto;
+            }
+        }
+    }
+    .online__one-page {
+        padding-bottom: 0;
+    }
+    .menu__one-page {
+        padding-bottom: 30px;
+        padding-top: 60px;
+    }
+    .discvoerer__one-page {
+        padding-top: 0;
     }
 }
 
@@ -167,6 +267,34 @@
     .online-res .about__box {
         margin-top: 180px;
     }
+    .testimonial__home {
+        .testimonial__inner {
+            display: block;
+        }
+        .testimonial__quote {
+            margin-top: 35px;
+        }
+        .testimonial__img-wrapper img {
+            margin: 0 auto;
+        }
+    }
+    .services__home {
+        .services__item {
+            padding: 69px 12px;
+        }
+    }
+    .gallery__one-page {
+        .gallery__inner {
+            display: block;
+        }
+        .gallery__box {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        .gallery__wrapper {
+            margin: 0 auto;
+        }
+    }
 }
 
 @media (max-width: 761px) {
@@ -237,6 +365,86 @@
     }
     .about2 .contact__box {
         margin-top: -40px;
+    }
+    .slider__home-item {
+        min-height: 450px;
+    }
+    .home__box-title {
+        font-size: 28px;
+    }
+    .home__wrapper {
+        bottom: 50px;
+    }
+    .home__box {
+        left: 0;
+        bottom: 100px;
+    }
+    .menu__home {
+        .menu__pictures {
+            .menu__photo1,
+            .menu__photo2 {
+                width: 260px;
+                height: 175px;
+            }
+            .menu__photo2 {
+                top: 120px;
+                right: 60px;
+            }
+        }
+        .menu__box {
+            margin-top: 150px;
+        }
+    }
+    .reservation__home {
+        .reservation__pictures {
+            .reservation__photo1,
+            .reservation__photo2 {
+                width: 260px;
+                height: 175px;
+            }
+            .reservation__photo2 {
+                top: 120px;
+                right: 60px;
+                left: auto;
+            }
+        }
+        .reservation__box {
+            margin-top: 150px;
+        }
+    }
+    .contact__home {
+        .contact__pictures {
+            .contact__photo1,
+            .contact__photo2 {
+                width: 260px;
+                height: 175px;
+            }
+            .contact__photo2 {
+                right: 60px;
+                top: 120px;
+            }
+        }
+        .contact__box {
+            padding-top: 0;
+            margin-top: -70px;
+        }
+    }
+    .contact__one-page {
+        .contact__pictures {
+            .contact__photo1,
+            .contact__photo2 {
+                width: 260px;
+                height: 175px;
+            }
+            .contact__photo2 {
+                right: 60px;
+                top: 120px;
+            }
+        }
+        .contact__box {
+            padding-top: 0;
+            margin-top: -70px;
+        }
     }
 }
 
@@ -312,6 +520,27 @@
     }
     .online-res .about__box {
         margin-top: 145px;
+    }
+    .services__home {
+        .services__list {
+            display: block;
+        }
+        .services__item:not(:first-child) {
+            border-left: none;
+            border-top: 1px solid #d9d9d9;
+        }
+    }
+}
+
+@media (max-width: 545px) {
+    .gallery__one-page {
+        .gallery__wrapper {
+            max-width: 330px;
+        }
+        .gallery__wrapper .gallery__thumb-inner>img {
+            width: 145px;
+            height: 145px;
+        }
     }
 }
 
@@ -408,6 +637,85 @@
     .online-res .reservations__box {
         padding: 0px ;
     }
+    .menu__home {
+        padding-bottom: 100px;
+        .menu__pictures {
+            .menu__photo1 {
+                margin-right: 0;
+            }
+            .menu__photo2 {
+                left: 0;
+            }
+        }
+        .menu__box {
+            text-align: left;
+        }
+    }
+    .testimonial__home {
+        .testimonial__img-wrapper img {
+            width: 275px;
+            height: 380px;
+        }
+        .testimonial__quote-content {
+            font-size: 20px;
+        }
+        .testimonial__quote-name {
+            font-size: 14px;
+        }
+    }
+    .reservation__home {
+        .reservation__pictures {
+            .reservation__photo1 {
+                margin-left: 0;
+            }
+            .reservation__photo2 {
+                right: 0;
+            }
+        }
+        .reservation__box {
+            text-align: left;
+        }
+    }
+    .about__box-title, .menu__box-title, .contact__box-title, .reservation__box-title, .services__inner-title {
+        font-size: 38px;
+    }
+    .reservation__box-title, .about__box-title {
+        letter-spacing: 5px;
+    }
+    .reservation__home {
+        padding-bottom: 60px;
+    }
+    .blog__home {
+        .blog__list .blog__posts-post {
+            margin: 50px auto;
+            width: 275px;
+            height: 275px;
+        }
+        .blog__home .blog__list .blog__posts-post__inner:hover {
+            transform: scale(1.05);
+        }
+    }
+    .contact__home {
+        .contact__box {
+            margin-top: 70px;
+        }
+    }
+    .contact__one-page {
+        .contact__pictures {
+            .contact__photo1 {
+                margin-right: 0;
+            }
+            .contact__photo2 {
+                left: 0;
+            }
+        }
+        .contact__box {
+            margin-top: 70px;
+        }
+    }
+    .menu__one-page {
+        padding-bottom: 30px;
+    }
 }
 
 @media (max-width: 374px) {
@@ -426,10 +734,21 @@
     .online-res .about__photo2  {
         left: 0;
     }
+    .gallery__one-page {
+        .gallery__wrapper {
+            margin: 0 auto;
+            max-width: 280px;
+        }
+        .gallery__wrapper .gallery__thumb-inner>img {
+            width: 130px;
+            height: 130px;
+        }
+        .gallery__thumb {
+            margin: 3px;
+            padding: 0px;
+        }
+    }
 }
-
-
-
 
 
 
