@@ -10,7 +10,6 @@ $(function(){
     });
 
     $(".my-flipster").flipster({
-        /* style: 'carousel', */
         spacing: -0.9,
         nav: false,
         buttons: true,
