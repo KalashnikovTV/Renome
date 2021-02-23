@@ -5,7 +5,7 @@ $(function(){
         prevArrow: $('.prev'),
         nextArrow: $('.next'),
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 5000,
         infinite: true
     });
 
